@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { SlickCarouselConfig } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-play',
   templateUrl: './play.component.html',
