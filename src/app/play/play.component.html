@@ -9,7 +9,7 @@
   </div>
   <div class="episode-list">
     <h3>Liste des épisodes</h3>
-    <ngx-slick-carousel class="carousel" [config]="carouselConfig" (afterChange)="onCarouselSlideChange($event)">
+    <ngx-slick-carousel class="carousel" [config]="carouselConfig">
       <div ngxSlickItem *ngFor="let episode of episodes">
         <!-- Contenu de chaque élément du carrousel -->
         <div class="carousel-item">

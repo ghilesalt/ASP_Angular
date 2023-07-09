@@ -37,7 +37,7 @@ yarn-error.log
 testem.log
 /typings
 
-/assets/*.mp4
+src/assets/*.mp4
 
 # System files
 .DS_Store
