@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <app-header></app-header>
+  <div class="search-bar">
+    <input
+      type="text"
+      (ngModelChange)="searchAnimes(key.value)"
+      #key="ngModel"
+      ngModel
+      name="key"
+      id=""
+      placeholder="Rechercher un anime..."
+    />
+    <button>Rechercher</button>
+  </div>
+
+  <body>
+    <div class="container bootstrap snipets">
+      <div class="row flow-offset-1">
+        <div class="col-xs-6 col-md-4">
+          <div class="product tumbnail thumbnail-3">
+            <a class="imageContainer">
+              <img
+                routerLink="/play"
+                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                alt=""
+              />
+            </a>
+            <div class="caption">
+              <h6>
+                <a>Short Sleeve T-Shirt</a>
+                <i
+                  routerLink="/accueil/detail"
+                  class="fas fa-info-circle info-icon"
+                ></i>
+              </h6>
+              <span class="price"> <del>$24.99</del></span
+              ><span class="price sale">$12.49</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

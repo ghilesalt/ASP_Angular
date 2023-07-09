@@ -1,0 +1,64 @@
+.serie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.episode-list {
+  width: 100%;
+  max-width: 800px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+video {
+  width: 100%;
+}
+
+mat-list-item {
+  cursor: pointer;
+}
+
+.carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item .thumbnail {
+  width: 200px;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-item .thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item .details {
+  margin-top: 10px;
+}
+
+.carousel-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel-item p {
+  font-size: 14px;
+  color: #999;
+}

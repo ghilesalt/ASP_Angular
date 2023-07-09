@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="serie-container">
+  <div class="video-container">
+    <h2>Titre de la série</h2>
+    <video controls>
+      <source src="../../assets/Film.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+  </div>
+  <div class="episode-list">
+    <h3>Liste des épisodes</h3>
+    <ngx-slick-carousel class="carousel" [config]="carouselConfig" (afterChange)="onCarouselSlideChange($event)">
+      <div ngxSlickItem *ngFor="let episode of episodes">
+        <!-- Contenu de chaque élément du carrousel -->
+        <div class="carousel-item">
+          <div class="thumbnail">
+            <img [src]="episode.thumbnail" alt="{{ episode.title }}">
+          </div>
+          <div class="details">
+            <h3>{{ episode.title }}</h3>
+            <p>{{ episode.description }}</p>
+          </div>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+
+
+  </div>
+</div>
